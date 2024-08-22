@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #816596;
+            --secondary-color: #db64df; 
+            --background-color: #f4f4f4;
+            --text-color: #333;
+            --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body, h1, h2, p, ul, li, a, form, input, textarea, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .box {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: var(--box-shadow);
+            margin: 2em auto;
+            padding: 2em;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .box h1, .box h2 {
+            color: var(--primary-color);
+            margin-bottom: 1em;
+        }
+
+        .box p {
+            color: var(--text-color);
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            flex-wrap: wrap;
+        }
+
+        .gallery-item {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: var(--box-shadow);
+            flex: 1 1 calc(33% - 1em);
+            text-align: center;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        form button:hover {
+            background-color: #5e0a9f;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="box">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Your one-stop showcase for my frontend development skills.</p>
+    </section>
+
+    <section id="about" class="box">
+        <h2>About Me</h2>
+        <p>Hi, I’m Areej Afzal, a frontend developer who loves creating beautiful and functional websites. Using HTML, CSS, and JavaScript, I build responsive and dynamic web experiences. My passion is to craft elegant solutions to complex problems and continuously improve user experiences.</p>
+    </section>
+
+    <section id="portfolio" class="box">
+        <h2>My Work</h2>
+        <div class="gallery">
+            <div class="gallery-item">Project 1</div>
+            <div class="gallery-item">Project 2</div>
+            <div class="gallery-item">Project 3</div>
+        </div>
+    </section>
+
+    <section id="resume" class="box">
+        <h2>Resume</h2>
+        <a href="resume.pdf" target="_blank" download>Download my resume</a>
+    </section>
+
+    <section id="contact" class="box">
+        <h2>Contact Me</h2>
+        <form action="send-message.php" method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024. All rights reserved.</p>
+    </footer>
+
+    <script>
+    </script>
+</body>
+</html>
