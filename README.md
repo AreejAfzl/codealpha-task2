@@ -8,5 +8,5 @@ This journey has been both challenging and rewarding as I designed and developed
 - Resume: Download link
 - Contact: Form to get in touch
 
-#WebDevelopment #Portfolio #CodeAlpha g#JavaScript hashtag#CSS #HTML 
+#Portfolio #CodeAlpha g#JavaScript #CSS #HTML 
 
